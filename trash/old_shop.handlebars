@@ -1,0 +1,17 @@
+extends layouts/main-layout.handlebars
+
+block content
+    <main>
+
+      <h1 class = "my_product_title"> My Shopping Cart</h1>
+      <div class = "row product_row">
+        {{#each products}}
+              <div class="col-2 card" style="width: 18rem">
+                  <div class="card-body">
+                      <h5 class="card-title product_title"> {{this.title}}</h5>
+                      <img class="product_image" src="assets/imgs/placeholder.png"/>
+                    </div>
+                </div>
+          {{/each}}
+        </div>
+    </main>

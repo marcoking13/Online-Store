@@ -1,0 +1,12 @@
+extends layouts/main-layout.pug
+
+
+block content
+    main
+      h1.my_product_title My Shopping Cart
+      div.row.product_row
+        each product in products
+              div.col-2.card(style="width: 18rem")
+                  div.card-body
+                      h5.card-title.product_title #{product.title}
+                      img.product_image(src="assets/imgs/placeholder.png")
